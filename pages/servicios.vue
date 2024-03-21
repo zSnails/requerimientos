@@ -42,23 +42,23 @@ interface Service {
 const allServices: Service[] = [
     {
         name: 'Lavado de pelo',
-        description: 'Le lavamos el pelo vio jue fuap'
+        description: 'Le lavamos el pelo, con productos especiales para su tipo de cabello'
     },
     {
         name: 'Pintada de uñas',
-        description: 'Yay lo que usted ve en la imagen'
+        description: 'Se le pintan las uñas a su gusto'
     },
     {
-        name: 'Este si es un corte de pelos',
-        description: 'Este si era, no como lo que puso Z en el primero'
+        name: 'Sacado de cejas',
+        description: 'Se le marcan o afinan las cejas a su gusto'
     },
     {
-        name: 'Spa o algo así',
-        description: 'Hola'
+        name: 'Spa',
+        description: 'Un momento de relajación'
     },
     {
         name: 'Depilación de piernas',
-        description: 'A mano'
+        description: 'Se hace con cera'
     }
 ];
 
