@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col max-h-screen h-screen">
-        <UHorizontalNavigation :links="links" class="border-p border-gray-200 dark:border-gray-800" />
+        <UHorizontalNavigation :links="links" class="border-p border-gray-200 dark:border-gray-800 shadow-sm" />
         <!-- WARNING: this could cause trouble later on -->
         <NuxtPage class="grow h-[0px]" />
     </div>
