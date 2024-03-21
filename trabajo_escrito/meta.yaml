@@ -1,0 +1,13 @@
+documentclass: apa7tec
+author: Aaron González, Anthony Jiménez, Daniel Porras
+title: "Definición de proyecto y Requerimientos"
+lang: es
+toc: true
+classoption: stu
+header-includes: |
+  \duedate{\today}
+  \shorttitle{Definición | Requerimientos}
+  \professor{Marvin Campos Fuentes}
+  \mes{Marzo}
+  \venue{San Carlos}
+  \course{Requerimientos de Software}
