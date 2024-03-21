@@ -1,17 +1,19 @@
 <template>
     <div class="flex flex-col max-h-screen h-screen">
-        <UHorizontalNavigation :links="links" class="border-p border-gray-200 dark:border-gray-800 shadow-sm" />
-        <!-- WARNING: this could cause trouble later on -->
+        <div class="flex flex-row mx-5 border-p border-gray-200 dark:border-gray-800 shadow-sm items-center">
+            <UHorizontalNavigation :links="links" />
+        </div>
         <NuxtPage class="grow h-[0px]" />
     </div>
 </template>
 <script setup lang="ts">
 const links = [
-    {
+    [{
         label: 'Beauty Shop',
         avatar: {
             src: '/img/logo.png',
         },
+        to: '/'
     },
     {
         label: 'Servicios',
@@ -25,9 +27,22 @@ const links = [
     },
     {
         label: 'Contacto',
-        icon: 'i-heroicons-user',
+        icon: 'i-heroicons-phone',
         to: '/contacto'
-    }
+    }],
+    [
+        {
+            label: 'Citas Futuras',
+            icon: 'i-heroicons-calendar-days',
+            to: '/obtener-citas'
+        },
+        {
+            label: 'Citas Activas',
+            icon: 'i-heroicons-calendar',
+            to: '/mis-citas'
+        },
+
+    ]
 ];
 </script>
 <style>

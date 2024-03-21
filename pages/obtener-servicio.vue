@@ -75,7 +75,7 @@
                 </div>
             </UCard>
             <center>
-                <UButton color="teal" class="w-fit shadow-lg" variant="soft" size="xl">Agendar Cita</UButton>
+                <UButton color="teal" class="w-fit hover:shadow-lg" variant="ghost" size="xl">Agendar Cita</UButton>
             </center>
         </div>
     </div>
