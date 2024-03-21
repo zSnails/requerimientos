@@ -41,6 +41,11 @@ const links = [
             icon: 'i-heroicons-calendar',
             to: '/mis-citas'
         },
+        {
+            label: 'Historial de Servicios',
+            icon: 'i-heroicons-clock',
+            to: '/historial-servicios'
+        },
 
     ]
 ];
