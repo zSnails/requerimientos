@@ -1,26 +1,40 @@
 <template>
-  <NuxtPage />
+    <div class="flex flex-col max-h-screen h-screen">
+        <UHorizontalNavigation :links="links" class="border-p border-gray-200 dark:border-gray-800" />
+        <!-- WARNING: this could cause trouble later on -->
+        <NuxtPage class="grow h-[0px]" />
+    </div>
 </template>
 <script setup lang="ts">
-import { ref } from "vue";
-const toast = useToast();
-let nombre = ref("");
 const links = [
     {
-        label: "Leche",
-        icon: 'i-lucide-milk'
+        label: 'Beauty Shop',
+        avatar: {
+            src: '/img/logo.png',
+        },
     },
     {
-        label: "Nube",
-        icon: 'i-heroicons-cloud-arrow-down'
+        label: 'Servicios',
+        icon: 'i-heroicons-home',
+        to: '/servicios'
     },
     {
-        label: "Archivo",
-        icon: 'i-heroicons-archive-box'
+        label: 'Información',
+        icon: 'i-heroicons-information-circle',
+        to: '/informacion'
+    },
+    {
+        label: 'Contacto',
+        icon: 'i-heroicons-user',
+        to: '/contacto'
     }
 ];
 </script>
 <style>
+.bg-static {
+    background-color: rgba(0, 0, 0, .03);
+}
+
 :root[data-theme="light"] {
     --text-50: #ebedf9;
     --text-100: #d7daf4;
