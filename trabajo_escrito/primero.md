@@ -292,11 +292,9 @@ ejecución más efectiva del proyecto.
 
 - Se revisó y terminó la parte escrita del proyecto.
 - Se terminó la pestaña de inicio de sesión del prototipo finalizando este.
+- Se grabó el video.
 
 ---
 
-## *21 DE MARZO*
-
-- Se grabó el video.
 
 ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAAtJREFUGFdjYAACAAAFAAGq1chRAAAAAElFTkSuQmCC)

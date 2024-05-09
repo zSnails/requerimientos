@@ -1,0 +1,24 @@
+@startuml
+skinparam actorStyle awesome
+/' skinparam linetype ortho '/
+
+left to right direction
+actor Barbero as barbero
+actor Administrador as admin
+actor Cliente as cliente
+
+
+:barbero: --> (Ver Citas Futuras) 
+:admin: --> (Ver Citas Futuras)
+
+:barbero: --> (Destacar Citas Para el Día Actual)
+:admin: --> (Destacar Citas Para el Día Actual)
+
+:barbero: --> (Ver Información Detallada de Citas)
+:admin: --> (Ver Información Detallada de Citas)
+
+:cliente: --> (Cancelar cita)
+:cliente: --> (Reprogramar cita)
+:cliente: --> (Confirmar cancelación)
+
+@enduml

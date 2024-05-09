@@ -1,0 +1,26 @@
+@startuml
+
+skinparam actorStyle awesome
+skinparam linetype ortho
+
+left to right direction
+actor Cliente as cliente
+actor Administrador as admin
+
+:cliente: --> (Ver lista de servicios disponibles)
+:cliente: --> (Ver detalles de un servicio)
+:cliente: --> (Filtrar servicios por categoría)
+:cliente: --> (Buscar servicios por palabra clave)
+:cliente: --> (Agendar servicio)
+:cliente: --> (Elegir fecha de la cita)
+
+:admin: --> (Gestionar servicios)
+:admin: --> (Administrar categorías de servicios)
+:admin: --> (Ver estadísticas de uso de servicios)
+
+:admin: --> (Ver historial de servicios)
+:admin: --> (Ver detalles de servicio concluido)
+
+:cliente: --> (Ver lista de servicios disponibles)
+
+@enduml

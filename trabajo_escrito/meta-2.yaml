@@ -1,0 +1,14 @@
+documentclass: apa7tec
+author: Aaron González, Anthony Jiménez, Daniel Porras
+title: "Aplicación Estética: Casos de Uso de Requerimientos"
+lang: es
+toc: true
+lof: true
+classoption: stu
+header-includes: |
+  \duedate{\today}
+  \shorttitle{Casos de Uso | Requerimientos}
+  \professor{Marvin Campos Fuentes}
+  \mes{Marzo}
+  \venue{San Carlos}
+  \course{Requerimientos de Software}

@@ -1,0 +1,12 @@
+@startuml
+skinparam actorStyle awesome
+skinparam linetype ortho
+left to right direction
+actor Cliente as cliente
+
+:cliente: --> (Ver información de contacto)
+:cliente: --> (Llamar al salón)
+:cliente: --> (Acceder a redes sociales)
+:cliente: --> (Ver ubicación en mapa)
+
+@enduml

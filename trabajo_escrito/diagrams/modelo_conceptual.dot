@@ -1,0 +1,61 @@
+digraph "Modelo" {
+    node [shape=box];
+    //splines=ortho;
+    splines=polyline;
+
+    cliente [label="Cliente"];
+    informacionPersonal [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td port="title">Información Personal</td></tr>
+            <tr><td port="text">Nombre, Correo, Contraseña</td></tr>
+        </table>>, shape="none"];
+
+    contacto [label=<
+    <table border="0" cellborder="1" cellspacing="0">
+        <tr><td port="title">Contacto</td></tr>
+        <tr><td port="text">Redes Sociales<br/>Número de contacto<br/>Correo electrónico<br/>Dirección</td></tr>
+    </table>>, shape="none"];
+
+    estilista [label="Estilista"];
+    estilista -> informacionPersonal:title [label="Tiene"];
+    servicio [label="Servicio"];
+    // cliente -> agendarServicio [label="Puede"];
+    // cliente -> consultarServicios [label="Puede"];
+
+    historial [label="Historial"];
+    historial -> servicio [label="Tiene", arrowhead=crow];
+    informacionServicio:title -> estilista [label="Tiene"];
+    cliente -> servicio [label="Agenda\nCancela", arrowhead=crow];
+
+    inicioSesion [label="Autenticación"];
+    cliente -> inicioSesion [label="Puede"];
+    administrador -> inicioSesion [label="Puede"];
+
+    //agendarServicio;
+
+    //consultarServicios;
+
+    //servicio -> agendarServicio [label="Tiene", dir="both"];
+
+    // servicio -> consultarServicios [label="Tiene", dir="both"];
+    cliente -> historial [label="Tiene"];
+
+    administrador [label="Administrador"];
+    administrador -> informacionPersonal:title [label="Tiene"];
+    cliente -> informacionPersonal:title [label="Tiene"];
+    administrador -> historial [label="Utiliza"];
+
+    administrador -> servicio [label="Administra"];
+
+
+    // TODO: poner nombre encima de este nodo
+    //informacionServicio [label="Cita\n--------\nNombre, Estilista\nHora, Fecha\nLugar"];
+    informacionServicio [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+            <tr><td port="title">Cita</td></tr>
+            <tr><td port="text">Nombre, Estilista<br />Hora, Fecha<br />Lugar</td></tr>
+            <tr><td port="text">Detalles adicionales</td></tr>
+            <tr><td port="text">Extras</td></tr>
+        </table>>, shape="none"];
+    servicio -> informacionServicio:title [label="Tiene"];
+}
