@@ -146,7 +146,6 @@
 |Como cliente puedo ver el historial de citas que he tenido, para llevar un registro.|5|
 |Como administrador puedo ver un historial de todos los servicios, con descripción y ganancias.|8|
 |Como cliente tengo acceso a un apartado de contacto para contactar con la empresa.|4|
-|Como administrador puedo visualizar una lista de citas agendadas para conocer que citas vendrán al local en un determinado día.|3|
 |Como cliente puedo iniciar sesión.|2|
 |Como administrador puedo agregar nuevos servicios o eliminar los existentes para poder expandir el catálogo.|4|
 
