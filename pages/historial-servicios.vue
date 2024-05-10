@@ -87,7 +87,7 @@ let servicios = ref([
 let filtroEstilista = ref('');
 let selectedDate = ref('');
 
-const onDateChange = (date) => {
+const onDateChange = (date: Date) => {
   console.log('Fecha seleccionada:', date);
   selectedDate.value = date.toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' }); // Formatear la fecha como día, mes, año
   console.log(selectedDate.value);
@@ -102,7 +102,7 @@ const serviciosFiltrados = computed(() => {
   });
 });
 
-function formatoFecha(fecha) {
+function formatoFecha(fecha: string) {
   const [dia, mes, anio] = fecha.split('/');
   return `${dia.padStart(2, '0')}/${mes.padStart(2, '0')}/${anio}`;
 }
