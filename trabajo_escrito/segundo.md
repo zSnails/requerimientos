@@ -137,16 +137,18 @@
 
 # Backlog (historias de usuario)
 
-- Como cliente puedo cancelar citas previamente agendadas.
-- Como administrador puedo ver una lista con todos los servicios previamente
-  agendados, la lista tiene capacidad para ser filtrada por fecha del servicio.
-- Como cliente puedo ver una lista con todos los servicios disponibles con imagenes y
-  descripciones breves.
-- Como cliente puedo ver el historial de citas que he tenido, para llevar un registro.
-- Como administrador puedo ver un historial de todos los servicios con descripción y ganancias.
-- Como cliente tengo acceso a un apartado de contacto para contactar con la empresa.
-- Como administrador puedo visualizar una lista de citas agendadas para conocer que
-  clientes vendrán a local en un determinado día (incluyendo el actual).
+|Nombre|Nivel|
+|:--|:-:|
+|Como cliente puedo buscar servicios disponibles para ver que puedo agendar.|4|
+|Como cliente puedo cancelar citas previamente agendadas.|2|
+|Como administrador puedo ver una lista con todos los servicios que han sido agendados.|4|
+|Como cliente puedo ver una lista de todos los servicios disponibles con imágenes y descripciones breves.|3|
+|Como cliente puedo ver el historial de citas que he tenido, para llevar un registro.|5|
+|Como administrador puedo ver un historial de todos los servicios, con descripción y ganancias.|8|
+|Como cliente tengo acceso a un apartado de contacto para contactar con la empresa.|4|
+|Como administrador puedo visualizar una lista de citas agendadas para conocer que citas vendrán al local en un determinado día.|3|
+|Como cliente puedo iniciar sesión.|2|
+|Como administrador puedo agregar nuevos servicios o eliminar los existentes para poder expandir el catálogo.|4|
 
 \newpage
 
